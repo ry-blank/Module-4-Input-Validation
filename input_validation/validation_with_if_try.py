@@ -11,8 +11,11 @@ Update: Function now taking parameters.
 
 
 def average(score1, score2, score3):
-    average_score = float(score1 + score2 + score3) / 3
-    return average_score
+    if score1 <= 0:
+        raise ValueError
+    else:
+        average_score = (float(score1) + float(score2) + float(score3)) / 3
+        return average_score
 
 
 if __name__ == '__main__':

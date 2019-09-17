@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_average_negative_input(self):
         with self.assertRaises(ValueError):
-            validation_with_if_try.average(-85, 90, 95)
+            validation_with_if_try.average(85, -90, 95)
 
 
 if __name__ == '__main__':

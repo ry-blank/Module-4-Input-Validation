@@ -9,8 +9,13 @@ the average of the 3 test scores.
 
 
 def average(score1, score2, score3):
-    average_score = (int(score1) + int(score2) + int(score3)) / 3
-    return average_score
+
+    if score1 <= 0 or score2 <= 0 or score3 <= 0:
+        print("No negative scores please.")
+        return -1
+    else:
+        average_score = (int(score1) + int(score2) + int(score3)) / 3
+        return average_score
 
 
 if __name__ == '__main__':
